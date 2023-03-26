@@ -14,6 +14,7 @@
 
 .body {
     font-family: sans-serif;
+    background-image: url(IrM.gif);
 }
 .nav-toggle{
     display: none;
@@ -296,4 +297,51 @@ button:hover{
      background: transparent;
      border: 2px solid #4e06f7 ;
      cursor: pointer;
+}
+.CHARACTERS{
+    background-image: url(IrM.gif);
+}
+.h1color{
+color: #ffffff;
+margin-left: 750px;
+align-items: center;
+}
+.image-grid {
+    display: block;
+    align-items: center;
+    margin-left: 500px;
+    --gap: 16px;
+    --num-cols: 4;
+    --row-height: 300px;
+    border-spacing: 150px;
+
+    box-sizing:calc(500px);
+    padding: var(--gap);
+
+    disply: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+.image-grid > img {
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+   border-spacing: 500px;
+}
+.image-grid-col-2 {
+    grid-column: span 2;
+}
+.image-grid-row-2 {
+    grid-row : span 2;
+}
+
+
+
+@media screen and(max-width: 1024px) {
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+    
 }
