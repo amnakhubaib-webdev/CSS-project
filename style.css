@@ -34,7 +34,6 @@
     background-color: var(--color-black);
     height: 80px;
     width: 100%;
-    position: fixed;
     display: flex;
     transition: background 1s;
     align-items: center;
